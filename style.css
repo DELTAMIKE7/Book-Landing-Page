@@ -1,0 +1,388 @@
+*{
+   margin: 0;
+   padding: 0;
+   box-sizing: border-box;
+}
+html,body{
+   height: 100%;
+   width: 100%;
+}
+#main{
+    min-height: 100vh;
+    width: 100vw;
+    overflow: hidden;
+    background-color: #fff;
+}
+#nav{
+    width: 100%;
+    height: 7vh;
+    padding: 1vw 5vw;
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+}
+#nav i{
+    font-size: 1.2rem;
+}
+#nav input{
+    text-decoration: none;
+    outline: none;
+    border: none;
+    background: transparent;
+    margin-left: 1rem;
+}
+#nav input::-webkit-input-placeholder{
+    /* font-size: 1.1vw; */
+    font-size: 1rem;
+    color: rgba(0, 0, 0, 0.641);
+}
+#foryou{
+    width: 100vw;
+    height: 40vh;
+}
+#foryou h1{
+    width: 100vw;
+    padding: .5vw 5vw;
+}
+#cards{
+    overflow: auto;
+    display: flex;
+    gap: 30px;
+    white-space: nowrap;
+}
+#cards::-webkit-scrollbar{
+    display: none;
+}
+.card{
+    width: 30vw;
+    display: flex;
+    padding: 2vw;
+    border-radius: 20px;
+    gap: 25px;
+}
+.card .photo{
+    width: 12vw;
+    height: 15vw;
+    background-position: center;
+    background-size: cover;
+    border-radius: 5px;
+}
+.cdetails{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+.cdetails h2{
+    font-size: 1.5rem;
+    margin-bottom: 25px;
+    color: #fff;
+    /* margin-bottom: 25px; */
+}
+.cdetails>h4{
+    margin-bottom: 15px;
+    font-family: Gilroy;
+    color: #fff;
+}
+.stars{
+    margin-bottom: 5px;
+    color: #fff;
+}
+.stars i{
+    /* color: #fff; */
+    font-size: 1.8vw;
+}
+.dps{
+    gap: 5px;
+    display: flex;
+}
+.dppics{
+    height: 33px;
+    width: 33px;
+    background-position: center;
+    background-size: cover;
+    border-radius: 50%;
+}
+#bna{
+    height: calc(100vh - 52vh);
+    display: flex;
+    padding: .5vw 3vw;
+}
+#browse{
+    width: 65vw;
+    height: 100%;
+}
+#books{
+    display: flex;
+    overflow: auto;
+    gap: 50px;
+    flex-wrap: wrap;
+}
+.book{
+    margin-left: 5px;
+    max-width: 17vw;
+    display: flex;
+    gap: 8px;
+    padding: .2vw;
+    border-radius:2.2vw;
+}
+
+.book .bimage{
+    background-position: center;
+    background-size: cover;
+    width: 7vw;
+    height: 10vw;
+    border-radius: 10px;
+}
+.btext h3{
+    margin-top: 10px;
+}
+.btext h5{
+    margin: 5px 0;
+}
+.bstars{
+    display: flex;
+    gap: 5px;
+}
+.bstars>i{
+    font-size: 1.3vw;
+}
+#author{
+    width: 35vw;
+    gap: 15px;
+    display: flex;
+    flex-direction: column;
+}
+.profiles{
+    display: flex;
+    gap: 10px;
+    align-items: center;
+}
+.profiles>h2{
+    white-space: nowrap;
+    font-size: 1.5rem;
+    font-family: Gilroy;
+    font-weight: 500;
+}
+.adp{
+    width: 2.4vw;
+    height: 2.4vw;
+    background-position: center;
+    background-size: cover;
+    border-radius: 50%;
+}
+
+/* -------------main books images----------- */
+/* -------------main books images----------- */
+.card:nth-child(1) .photo{
+    background-image: url(https://images-na.ssl-images-amazon.com/images/I/91yXLtDeh2L.jpg);
+}
+#cards .card:nth-child(1) {
+    background: linear-gradient(to left top ,rgb(39, 39, 161), rgb(182, 166, 166));
+}
+.card:nth-child(2) .photo{
+    background-image: url(https://images-na.ssl-images-amazon.com/images/I/611OWa8x+WL.jpg);
+}
+#cards .card:nth-child(2) {
+    background: linear-gradient(to left top , #cc2d3f,rgb(187, 187, 207));
+}
+.card:nth-child(3) .photo{
+    background-image: url(https://images-na.ssl-images-amazon.com/images/I/51k12IsrDcL.jpg);
+}
+#cards .card:nth-child(3) {
+    background: linear-gradient(to left top , #bf848d,#0C75AF);
+}
+.card:nth-child(4) .photo{
+    background-image: url(https://images-na.ssl-images-amazon.com/images/I/91l4IjA42IL.jpg);
+}
+#cards .card:nth-child(4) {
+    background: linear-gradient(to left top ,#47513f, #a5b39b);
+}
+/* -----------------------dps dppics-------------- */
+/* -----------------------dps dppics-------------- */
+.dps .dppics:nth-child(1){
+    background-image: url(https://images.unsplash.com/photo-1506794778202-cad84cf45f1d?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=774&q=80);
+}
+.dps .dppics:nth-child(2){
+    background-image: url(https://images.unsplash.com/photo-1552374196-c4e7ffc6e126?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=774&q=80); 
+}
+.dps .dppics:nth-child(3){
+    background-image: url(https://images.unsplash.com/photo-1494790108377-be9c29b29330?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=774&q=80);
+}
+/* --------------------------Browser boooks--------------- */
+/* --------------------------Browser boooks--------------- */
+.book:nth-child(1) .bimage{
+    background-image: url(https://images-na.ssl-images-amazon.com/images/I/81ItNGqapoL.jpg);
+}
+.book:nth-child(2) .bimage{
+    background-image: url(https://m.media-amazon.com/images/I/415Vok2xosL.jpg);
+}
+.book:nth-child(3) .bimage{
+    background-image: url(https://images-na.ssl-images-amazon.com/images/I/71AdHA+qqwL.jpg);
+}
+.book:nth-child(4) .bimage{
+    background-image: url(https://kbimages1-a.akamaihd.net/e57d7dfc-c8f4-4d3c-b569-6f7a65cb2c7a/1200/1200/False/the-7-habits-of-highly-effective-people-interactive-edition.jpg);
+}
+.book:nth-child(5) .bimage{
+    background-image: url(https://images-na.ssl-images-amazon.com/images/I/81Kwp2X0YSL.jpg);
+}
+.book:nth-child(6) .bimage{
+    background-image: url(https://images-na.ssl-images-amazon.com/images/I/81fdQIY6ykL.jpg);
+}
+/* -------------------------author pics---------------- */
+/* -------------------------author pics---------------- */
+.profiles:nth-child(2n+1) .adp{
+    background-image: url(https://images.unsplash.com/photo-1494790108377-be9c29b29330?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=774&q=80);
+}
+.profiles:nth-child(2n) .adp{
+    background-image: url(https://images.unsplash.com/photo-1552374196-c4e7ffc6e126?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=774&q=80);}
+
+
+    @media (max-width:500px) {
+        #main{
+            overflow: hidden;
+        }
+        #nav{
+            width: 100%;
+            height: 5vh;
+        }
+        #foryou{
+            width: 100%;
+            height: 32vh;;
+        }
+        #foryou h1{
+            font-size: 1.5rem;
+            width: 100vw;
+            padding: 0vw 2.5vw;
+        }
+        #cards{
+            gap: 14px;
+        }
+        .card{
+            width: 80vw;
+            padding: .8rem ;
+            gap: 15px;
+            margin-left: 1rem;
+            align-items: center;            
+        }
+        .card .photo{
+            width: 10rem;
+            height: 10rem;
+        }
+        .cdetails h2{
+            font-size: 1.2rem;
+            margin-bottom: 15px;
+            color: #fff;
+            font-family: Gulzar;
+        }
+        .cdetails>h4{
+            margin-bottom: 15px;
+            color: #fff;
+        }
+        .stars{
+            margin-bottom: 5px;
+            color: #fff;
+        }
+        .stars i{
+            font-size: 1rem;
+        }
+        .dps{
+            gap: 7px;
+        }
+        .dppics{
+            height: 30px;
+            width: 30px;
+        }   
+     
+    /* -------BNA------- */
+    #bna{
+        height: calc(100vh - 37vh);
+        display: flex;
+        flex-direction: column;
+        padding: 0vw 3vw;
+        align-items: center;
+        overflow: hidden;
+    }
+    #browse{
+        width: 100%;
+        height: 37vh;
+    }
+    #browse h1{
+        font-size: 1.6rem;
+    }
+    #books{
+        display: flex;
+        align-items: flex-start;
+        overflow: auto;
+        flex-wrap: nowrap;
+        gap: -40px;
+    }
+    .book{
+        min-width: 20vw;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: flex-start;
+        border-radius:2.2vw;
+    }
+    
+    .book .bimage{
+        background-position: center;
+        background-size: cover;
+        min-width: 4rem;
+        min-height: 7rem;
+        flex-shrink: 0;
+        white-space: nowrap;
+        border-radius: 10px;
+    }
+    .btext h3{
+        white-space: nowrap;
+        margin-top: -7px;
+        font-size: 1rem;
+    }
+    .btext h5{
+        font-family: Gilroy;
+        font-size: .6rem;
+    }
+    .bstars{
+        display: flex;
+        gap: 5px;
+    }
+    .bstars>i{
+        font-size: 1.3vw;
+    }
+    #author{
+        position: relative;
+        border: 1px solid #000;
+        width: 85vw;
+        height: 15vh;
+        border-radius: 30px;
+        min-height: inherit;
+        backdrop-filter: blur(3px);
+        gap: 5px;
+        display: flex;
+        overflow-x: auto;
+        flex-direction: row;
+    }
+    #author>h1{
+        position: absolute;
+        top: 0;
+        left: 30%;
+    }
+    .profiles{
+        margin-top: 5px;
+        display: flex;
+        flex-shrink: 0;
+        white-space: nowrap;
+        align-items: center;
+    }
+    .profiles h2{
+        font-size: 1.3rem;
+    }
+    .adp{
+        width: 2rem;
+        height: 2rem;
+        background-position: center;
+        background-size: cover;
+        border-radius: 50%;
+    }
+    }
